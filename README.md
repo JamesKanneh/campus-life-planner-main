@@ -2,26 +2,29 @@
 
 A fully accessible, responsive task and event management application for college and university students. Built with vanilla HTML, CSS, and JavaScript—no frameworks required.
 
-## 🎯 Project Overview
+##  Project Overview
 
 **Campus Life Planner** helps students organize their academic work, events, and personal tasks with powerful search, filtering, and time management features. All data is stored locally in your browser using localStorage, ensuring privacy and offline functionality.
 
 **Theme:** Campus Life Planner (tasks/events with title, dueDate, duration, tag)
 
-## ✨ Features
+## Deployed URL 
+[https://jameskanneh.github.io/campus-life-planner-main/](https://jameskanneh.github.io/campus-life-planner-main/)
+
+##  Features
 
 ### Core Features
 
-- ✅ **Task Management:** Create, read, update, and delete tasks with title, due date, duration, and tags
-- ✅ **Dashboard:** Real-time statistics including total tasks, upcoming tasks, total hours, and tag distribution
-- ✅ **Weekly Cap/Target:** Set a weekly time commitment goal with visual progress tracking and ARIA live alerts
-- ✅ **Advanced Search:** Regex-based search with case-insensitive toggle and match highlighting
-- ✅ **Sorting:** Sort tasks by title, due date, or duration in ascending/descending order
-- ✅ **Responsive Design:** Mobile-first design with 3 breakpoints (360px, 768px, 1024px)
-- ✅ **Local Storage:** Automatic saving of all tasks and settings to browser localStorage
-- ✅ **Import/Export:** JSON import/export with full data validation
-- ✅ **Settings:** Customize unit conversion, weekly cap, and manage tags
-- ✅ **Accessibility:** Full keyboard navigation, ARIA live regions, semantic HTML, high contrast
+-  **Task Management:** Create, read, update, and delete tasks with title, due date, duration, and tags
+-  **Dashboard:** Real-time statistics including total tasks, upcoming tasks, total hours, and tag distribution
+-  **Weekly Cap/Target:** Set a weekly time commitment goal with visual progress tracking and ARIA live alerts
+-  **Advanced Search:** Regex-based search with case-insensitive toggle and match highlighting
+-  **Sorting:** Sort tasks by title, due date, or duration in ascending/descending order
+-  **Responsive Design:** Mobile-first design with 3 breakpoints (360px, 768px, 1024px)
+-  **Local Storage:** Automatic saving of all tasks and settings to browser localStorage
+-  **Import/Export:** JSON import/export with full data validation
+-  **Settings:** Customize unit conversion, weekly cap, and manage tags
+-  **Accessibility:** Full keyboard navigation, ARIA live regions, semantic HTML, high contrast
 
 ### Accessibility Features
 
@@ -35,7 +38,7 @@ A fully accessible, responsive task and event management application for college
 - Color contrast ratio ≥4.5:1 (WCAG AA)
 - Touch targets ≥44px × 44px on mobile
 
-## 🏗️ File Structure
+##  File Structure
 
 ```
 campus-life-planner/
@@ -113,7 +116,7 @@ The application includes 5 regex patterns for comprehensive input validation:
 - **Rejects:** "finish task", "assignment"
 - **Feature:** Case-insensitive with back-reference capture group
 
-## ⌨️ Keyboard Navigation
+##  Keyboard Navigation
 
 | Key | Action |
 |-----|--------|
@@ -132,7 +135,7 @@ The application includes 5 regex patterns for comprehensive input validation:
 4. **Settings:** Tab to setting controls → Modify values → Auto-save
 5. **Delete:** Tab to delete button → Enter → Confirm dialog → Delete
 
-## 🎨 Design System
+##  Design System
 
 ### Color Palette
 
@@ -176,7 +179,7 @@ The application includes 5 regex patterns for comprehensive input validation:
 | Tablet | ~768px | Two columns, flexible grid, sidebar nav |
 | Desktop | ~1024px+ | Three columns, full table, fixed sidebar |
 
-## 🧪 Testing
+##  Testing
 
 ### Running Tests
 
@@ -186,11 +189,11 @@ The application includes 5 regex patterns for comprehensive input validation:
 
 ### Test Coverage
 
-- ✅ Title validation (6 tests)
-- ✅ Duration validation (8 tests)
-- ✅ Date validation (7 tests)
-- ✅ Tag validation (6 tests)
-- ✅ Duplicate word detection (5 tests)
+-  Title validation (6 tests)
+-  Duration validation (8 tests)
+-  Date validation (7 tests)
+-  Tag validation (6 tests)
+-  Duplicate word detection (5 tests)
 - **Total:** 32 automated tests
 
 ### Interactive Testing
@@ -201,7 +204,7 @@ The tests page includes an interactive regex tester where you can:
 - Enter test input
 - See real-time results with match highlighting
 
-## 💾 Data Model
+##  Data Model
 
 ### Task Object
 
@@ -236,7 +239,7 @@ The tests page includes an interactive regex tester where you can:
 - Deadline
 - Project
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Installation
 
@@ -261,7 +264,7 @@ To load sample data:
 3. Select `seed.json` file
 4. Confirm import
 
-## 📊 Search Examples
+##  Search Examples
 
 | Pattern | Purpose |
 |---------|---------|
@@ -273,7 +276,7 @@ To load sample data:
 | `@tag:Academic` | Filter by tag (special command) |
 | `@date:2025-09-29` | Filter by exact date (special command) |
 
-## 🔐 Privacy & Data
+##  Privacy & Data
 
 - **Local Storage:** All data stored in browser's localStorage (no server)
 - **No Tracking:** No analytics, cookies, or external requests
@@ -281,18 +284,18 @@ To load sample data:
 - **Import:** Restore data from exported JSON files
 - **Clear:** Delete all data with one click (irreversible)
 
-## ♿ Accessibility Compliance
+##  Accessibility Compliance
 
 ### WCAG 2.1 Level AA Compliance
 
-- ✅ Semantic HTML structure
-- ✅ Keyboard navigation (all features)
-- ✅ Focus indicators (visible and clear)
-- ✅ Color contrast (4.5:1 minimum)
-- ✅ ARIA labels and live regions
-- ✅ Skip-to-content link
-- ✅ Responsive touch targets (44px minimum)
-- ✅ Reduced motion support
+-  Semantic HTML structure
+-  Keyboard navigation (all features)
+-  Focus indicators (visible and clear)
+-  Color contrast (4.5:1 minimum)
+-  ARIA labels and live regions
+-  Skip-to-content link
+-  Responsive touch targets (44px minimum)
+-  Reduced motion support
 
 ### Screen Reader Support
 
@@ -302,7 +305,7 @@ To load sample data:
 - Status announcements
 - Form error messages
 
-## 🛠️ Development
+##  Development
 
 ### Technologies Used
 
@@ -329,35 +332,35 @@ To load sample data:
 - Error handling with try/catch
 - Debounced/throttled event handlers
 
-## 📝 Milestones
+##  Milestones
 
 | Milestone | Status | Description |
 |-----------|--------|-------------|
-| M1 | ✅ Complete | Specification & wireframes |
-| M2 | ✅ Complete | Semantic HTML & base CSS |
-| M3 | ✅ Complete | Forms & regex validation |
-| M4 | ✅ Complete | Rendering, sorting, search |
-| M5 | ✅ Complete | Stats dashboard & cap logic |
-| M6 | ✅ Complete | Persistence & import/export |
-| M7 | ✅ Complete | Polish, a11y, README, seed data |
+| M1 |  Complete | Specification & wireframes |
+| M2 |  Complete | Semantic HTML & base CSS |
+| M3 |  Complete | Forms & regex validation |
+| M4 |  Complete | Rendering, sorting, search |
+| M5 |  Complete | Stats dashboard & cap logic |
+| M6 |  Complete | Persistence & import/export |
+| M7 |  Complete | Polish, a11y, README, seed data |
 
-## 📄 License
+##  License
 
 This project is created for educational purposes as part of a web development assignment.
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - Regex patterns inspired by common validation best practices
 - Accessibility guidelines based on WCAG 2.1 standards
 - Design principles from modern web applications
 - Semantic HTML structure following HTML5 standards
 
-## 📞 Contact
+##  Contact
 
 For questions or feedback about this project:
 
-- **GitHub:** [Your GitHub Profile](https://github.com)
-- **Email:** <your.email@example.com>
+- **GitHub:** [My GitHub Profile](https://github.com/JamesKanneh)
+- **Email:** <j.kannehii@alustudent.com>
 
 ---
 
