@@ -61,7 +61,7 @@ campus-life-planner/
     └── utils.js              # Helper functions
 ```
 
-## 🔍 Regex Validation Patterns
+##  Regex Validation Patterns
 
 The application includes 5 regex patterns for comprehensive input validation:
 
@@ -171,7 +171,7 @@ The application includes 5 regex patterns for comprehensive input validation:
 - **Highlight:** 500ms ease-in-out
 - **Bounce:** 200ms ease-out
 
-## 📱 Responsive Breakpoints
+##  Responsive Breakpoints
 
 | Breakpoint | Width | Layout |
 |-----------|-------|--------|
