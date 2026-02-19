@@ -1,8 +1,3 @@
-/**
- * Main Module
- * Event handlers and application initialization
- */
-
 // Initialize application on page load
 document.addEventListener('DOMContentLoaded', () => {
     // Initialize state
@@ -28,28 +23,13 @@ document.addEventListener('DOMContentLoaded', () => {
  * Setup all event listeners
  */
 function setupEventListeners() {
-    // Navigation
     setupNavigationListeners();
-
-    // Tasks page
     setupTasksPageListeners();
-
-    // Modal
     setupModalListeners();
-
-    // Settings page
     setupSettingsListeners();
-
-    // Search
     setupSearchListeners();
-
-    // Sort
     setupSortListeners();
-
-    // Menu toggle
     setupMenuListeners();
-
-    // Theme toggle
     setupThemeListeners();
 }
 
@@ -71,7 +51,6 @@ function setupNavigationListeners() {
  * Setup tasks page event listeners
  */
 function setupTasksPageListeners() {
-    // Add task button
     const addTaskBtn = document.getElementById('addTaskBtn');
     if (addTaskBtn) {
         addTaskBtn.addEventListener('click', () => {
@@ -111,29 +90,21 @@ function setupModalListeners() {
     const form = document.getElementById('taskForm');
     const modalClose = document.getElementById('modalClose');
     const modalCancel = document.getElementById('modalCancel');
-
-    // Close button
     if (modalClose) {
         modalClose.addEventListener('click', () => {
             ui.hideTaskModal();
         });
     }
-
-    // Cancel button
     if (modalCancel) {
         modalCancel.addEventListener('click', () => {
             ui.hideTaskModal();
         });
     }
-
-    // Close on escape
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && modal.classList.contains('active')) {
             ui.hideTaskModal();
         }
     });
-
-    // Form submission
     if (form) {
         form.addEventListener('submit', (e) => {
             e.preventDefault();
@@ -198,7 +169,6 @@ function setupModalListeners() {
  * Setup settings page event listeners
  */
 function setupSettingsListeners() {
-    // Unit select
     const unitSelect = document.getElementById('unitSelect');
     if (unitSelect) {
         unitSelect.addEventListener('change', (e) => {
@@ -207,7 +177,6 @@ function setupSettingsListeners() {
         });
     }
 
-    // Cap input
     const capInput = document.getElementById('capInput');
     if (capInput) {
         capInput.addEventListener('change', (e) => {
@@ -223,7 +192,6 @@ function setupSettingsListeners() {
         });
     }
 
-    // Add tag button
     const addTagBtn = document.getElementById('addTagBtn');
     const newTagInput = document.getElementById('newTagInput');
     if (addTagBtn) {
@@ -247,7 +215,6 @@ function setupSettingsListeners() {
         });
     }
 
-    // Remove tag - using event delegation
     utils.delegate(document, '.tag-badge-remove', 'click', function(e) {
         e.preventDefault();
         const tag = this.dataset.tag;
@@ -259,7 +226,6 @@ function setupSettingsListeners() {
         }
     });
 
-    // Export button
     const exportBtn = document.getElementById('exportBtn');
     if (exportBtn) {
         exportBtn.addEventListener('click', () => {
@@ -273,7 +239,6 @@ function setupSettingsListeners() {
         });
     }
 
-    // Import button
     const importBtn = document.getElementById('importBtn');
     const importFile = document.getElementById('importFile');
     if (importBtn) {
@@ -302,7 +267,6 @@ function setupSettingsListeners() {
         });
     }
 
-    // Clear button
     const clearBtn = document.getElementById('clearBtn');
     if (clearBtn) {
         clearBtn.addEventListener('click', () => {
