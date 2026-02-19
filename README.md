@@ -61,5 +61,6 @@ All data stays on your computer in the browser (localStorage). Nothing is sent t
 
 - GitHub: https://github.com/JamesKanneh
 - Email: j.kannehii@alustudent.com
-- Demo Video: 
+- Demo Video: https://youtu.be/WocPj49Cb0Q
+
 Last updated: February 2026
